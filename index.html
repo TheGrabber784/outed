@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outed</title>
+    <style>
+        /* CSS styles for the search bar, video display, and user account components */
+    </style>
+</head>
+<body>
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher...">
+        <button id="search-button">Rechercher</button>
+      </div>
+    
+      <div id="search-results">
+        <!-- Les résultats de recherche seront affichés ici -->
+      </div>
+        <!-- Auto-suggested search query options -->
+    </datalist>
+    <select id="filters">
+        <option value="date">Date</option>
+        <option value="views">Views</option>
+        <!-- Search filter options -->
+    </select>
+
+    <!-- Video Display -->
+    <div class="videoPlayer">
+        <!-- Video player code -->
+    </div>
+    <div class="videoDetails">
+        <img src="data:image/jpeg;base64,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">
+        <h2>Bienvenue dans Outed!</h2>
+        <p> Description : ??? No description ???</p>
+        <p>Views: 541,203,450</p>
+        <button id="likeBtn">Like</button>
+        <button id="dislikeBtn">Dislike</button>
+        <button id="commentBtn">Comment</button>
+        <p>Publié le: 1er décembre 2023 par :  Le créateur de Outed</p>
+    </div>
+
+
+
+ 
